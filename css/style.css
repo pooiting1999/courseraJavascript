@@ -1,0 +1,85 @@
+* {
+	font-family: "Baloo Bhaijaan 2", sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+  	padding: 0;
+}
+
+h1 {
+	text-align: center;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.row > div{
+	margin: 15px;
+	float: left;
+    background-color: gray;
+    border: 1px solid black
+}
+
+.sec_title{
+	float: right;
+	width: 25%;
+	border: 1px solid black;
+	position: relative;
+	text-align: center;
+  	margin-top: 0px;
+  	font-weight: bold;
+}
+
+div p#sec_desc{
+	margin-top: 10%;
+	margin-right: auto;
+  	margin-left: auto;
+  	padding: 10px;
+  	
+}
+
+p{
+	width: 90%;
+}
+
+p#chickenTitle{
+	background-color: #d64f75;
+	color: black;
+}
+
+p#beefTitle{
+	background-color: #8f092e;
+	color: white;
+}
+
+p#sushiTitle{
+	background-color: #e6d785;
+	color: black;
+}
+
+/********** Desktop **********/
+@media (min-width: 992px) {
+  .col-lg-4 {
+    flex: 25%;
+  }
+}
+
+/********** Tablet **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    flex: 33.33%;
+  }
+  .col-md-12 {
+    flex: 100%;
+  }
+}
+/********** Mobile **********/
+@media (max-width: 767px)  {
+  .col-sm-12 {
+    flex: 100%
+  }
+}
